@@ -17,7 +17,7 @@ source data: https://opendata.transport.nsw.gov.au/dataset/timetables-complete-g
 
 def get_gtfs_data():
     URL = "https://api.transport.nsw.gov.au/v1/publictransport/timetables/complete/gtfs"
-    API_KEY = 'BJphVVSCi3hZFTzt1imtH4rTpWK0an6EBaZk'  # masked
+    API_KEY = '****'  # masked
     headers = dict(Authorization='apikey ' + API_KEY)
     print("Requesting new GTFS data...")
     response = requests.get(URL, headers=headers)
